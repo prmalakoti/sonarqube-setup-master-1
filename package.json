@@ -10,11 +10,11 @@
   "scripts": {
     "test": "mocha --timeout 30000 ./test/**/*.js --exit",
     "coverage": "D:/Prashant/sonarqube-setup-master/sonarqube-setup-master/app/node_modules/.bin/nyc -r cobertura -r text-summary -r html npm test",
-    "coverage-lcov": "D:/Prashant/sonarqube-setup-master/sonarqube-setup-master/app/node_modules/.bin/nyc -r cobertura -r text-summary -r lcov npm test",
+    "coverage-lcov": "D:/Prashant/sonarqube-setup-master-1/node_modules/.bin/nyc -r cobertura -r text-summary -r lcov npm test",
     "start": "nodemon server.js",
     "build": "webpack -p",
     "lint": "./node_modules/.bin/eslint .",
-    "sonar":  "D:/Prashant/sonarqube-setup-master/sonarqube-setup-master/app/node_modules/sonar-scanner/bin/sonar-scanner"
+    "sonar":  "C:/ProgramData/Jenkins/.jenkins/jobs/nodejsProjectSonarqube/workspace/node_modules/sonar-scanner/bin/sonar-scanner"
   },
   "author": "Vikash",
   "license": "MIT",

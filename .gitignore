@@ -1,6 +1,4 @@
-.scannerwork
-.DS_Store
-sonarqube-setup-to-server.txt
-.nyc_output/
-.scannerwork/
+*.log
 node_modules/
+coverage/
+.nyc_output/
