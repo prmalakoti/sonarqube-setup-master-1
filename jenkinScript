@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('stage') {
+            steps {
+                git branch: 'main', url: 'https://github.com/prmalakoti/sonarqube-setup-master-1.git' // git url
+            }
+        }
+            stage('sonarqube analysis'){
+                steps {
+                    nodejs(nodeJSInstallationName: 'nodejs'){
+                        bat "npm install"
+                        withSonarQubeEnv('sonar'){
+                            bat "npm install sonar-scanner"
+                            bat "npm run sonar" //run the scanner
+                            bat "npm run coverage" // code coverage
+                            bat "npm run test" // test cases run
+                        }
+                    }
+                }
+            }
+    }
+}
