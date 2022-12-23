@@ -9,17 +9,18 @@
   },
   "scripts": {
     "test": "mocha --timeout 30000 ./test/**/*.js --exit",
-    "coverage": "D:/Prashant/sonarqube-setup-master/sonarqube-setup-master/app/node_modules/.bin/nyc -r cobertura -r text-summary -r html npm test",
-    "coverage-lcov": "D:/Prashant/sonarqube-setup-master-1/node_modules/.bin/nyc -r cobertura -r text-summary -r lcov npm test",
+    "coverage": "C:/ProgramData/Jenkins/.jenkins/jobs/nodejsProjectSonarqube/workspace/node_modules/.bin/nyc -r cobertura -r text-summary -r html npm test",
+    "coverage-lcov": "C:/ProgramData/Jenkins/.jenkins/jobs/nodejsProjectSonarqube/workspace/node_modules/.bin/nyc -r cobertura -r text-summary -r lcov npm test",
     "start": "nodemon server.js",
     "build": "webpack -p",
     "lint": "./node_modules/.bin/eslint .",
-    "sonar":  "C:/ProgramData/Jenkins/.jenkins/jobs/nodejsProjectSonarqube/workspace/node_modules/sonar-scanner/bin/sonar-scanner"
+    "sonar": "C:/ProgramData/Jenkins/.jenkins/jobs/nodejsProjectSonarqube/workspace/node_modules/sonar-scanner/bin/sonar-scanner"
   },
   "author": "Vikash",
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",
+    "helmet": "^6.0.1",
     "js-yaml": "^3.13.1",
     "nodemon": "^2.0.20"
   },
@@ -32,7 +33,7 @@
     "mocha": "10.0.0",
     "nock": "13.0.4",
     "nyc": "15.1.0",
-    "supertest": "3.0.0",
-    "sonar-scanner": "^3.1.0"
+    "sonar-scanner": "^3.1.0",
+    "supertest": "3.0.0"
   }
 }
