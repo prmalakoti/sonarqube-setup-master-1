@@ -89,5 +89,3 @@ The only prerequisite of running SonarQube is to have Java (Oracle JRE 8 or Open
     - Run `npm run coverage-lcov` command. As a result it generates the coverage in the lcov format and same can be seen from <project_root_path>/app/coverage/lcov-report
     - Re-reun the `sonar-scanner` command from the path where `sonar-project.properties` file is defined/added. This generates the analysis report.
     - Navigate to the `sonarqube` dashboard you should see the `coverage` statistics.
-
-For any additional help, please write me to the `servikash@gmail.com`. I would be happy to help you!
